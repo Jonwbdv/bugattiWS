@@ -20,9 +20,19 @@
   --text-primary: rgba(255, 255, 255, 0.87);
   --bg-primary: #242424;
 
+  --text-shadow: 1px 1px 5px black, 1px 1px 5px black, 1px 1px 5px black,1px 1px 5px black;
+
 }
 
 #root{
   background: var(--bg-primary);
   color: var(--text-primary)
+}
+
+.text-shadow {
+  text-shadow: var(--text-shadow);
+}
+
+.bg-transparent{
+  background: transparent;
 }
