@@ -1,15 +1,22 @@
 import Navbar from "../components/Navbar"
 import Hero from "../sections/Home/Hero"
 
+import HeroCarousel from "../sections/Home/HeroCarousel"
+
 const Home = () => {
     return (
-        <main>
-            <Navbar/>
-            <Hero/>
-            <div style={{background: "#333333"}}>A</div>
-        
-        </main>
-        
+        <>
+            <header>
+                <Navbar/>
+            </header>
+            <main>
+                <HeroCarousel/>
+
+                <div style={{background: "#333333"}}>A</div>
+            
+            </main>
+            
+        </>
     )
 }
 
