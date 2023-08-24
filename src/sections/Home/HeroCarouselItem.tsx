@@ -13,17 +13,18 @@ interface HeroCarouselItemProps {
 
 const HeroCarouselItem = ({videoUrl, mainText, subText, discoverText}: HeroCarouselItemProps) => {
     return (
-        <motion.figure className="flex flex-col justify-center items-center" variants={carouselSlide} initial="hidden" animate="show" transition={{  
+        <motion.figure className="absolute flex flex-col w-full left-[0%] top-[0%] justify-top items-center" variants={carouselSlide} initial="hidden" animate="show" transition={{  
             type: 'tween',
             duration: 1,
             delay: 2
         }} exit="exit">
-            <video className="z-[1] relative" width="100%" height="100%" autoPlay loop muted>
-                <source src={videoUrl} type="video/mp4"/>
-                Your browser does not support HTML5 Video.
-            </video>
-            <h2 className="absolute z-[2] pb-[4em] text-[3rem] text-shadow" >{mainText}</h2>
-            <p className="absolute z-[2] pt-[1em] text-[2.0rem] text-shadow">{subText}</p>
+                <video className="z-[1] relative" width="100%" height="100%" autoPlay loop muted>
+                    <source src={videoUrl} type="video/mp4"/>
+                    Your browser does not support HTML5 Video.
+                </video>
+
+            <h2 className="absolute z-[2] pt-[4em] text-[3rem] text-shadow" >{mainText}</h2>
+            <p className="absolute z-[2] pt-[10em] text-[2.0rem] text-shadow">{subText}</p>
             <p className="absolute z-[2] pt-[20em] text-[1.5rem] text-shadow hover:underline">{discoverText} <AiOutlineArrowRight className="inline"/></p>
         </motion.figure>
     )
