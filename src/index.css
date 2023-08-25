@@ -36,3 +36,9 @@
 .bg-transparent{
   background: transparent;
 }
+
+.divider-01{
+  width: 80%;
+  height: 1px;
+  border: 1px solid black;
+}
