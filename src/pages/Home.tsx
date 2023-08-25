@@ -1,8 +1,29 @@
+import Footer from "../components/Footer"
+import Navbar from "../components/Navbar"
+
+import HeroCarousel from "../sections/Home/HeroCarousel"
+import NewsCarousel from "../sections/Home/NewsCarousel"
+import Showcase from "../sections/Home/Showcase"
+
 const Home = () => {
     return (
-        <main>
-            Home
-        </main>
+        <>
+            <header>
+                <Navbar/>
+            </header>
+            <main>
+                <HeroCarousel/>
+                
+                <Showcase/>
+
+                <NewsCarousel/>
+            </main>
+
+            <footer>
+                <Footer/>
+            </footer>
+            
+        </>
     )
 }
 
