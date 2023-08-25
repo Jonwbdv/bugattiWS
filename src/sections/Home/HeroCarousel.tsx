@@ -1,5 +1,5 @@
 
-import { heroCarouselItemInfo } from "../../constants/heroContent"
+import { heroCarouselItemInfo } from "../../constants/heroContentHome"
 
 import HeroCarouselItem from "./HeroCarouselItem"
 
@@ -48,7 +48,7 @@ const HeroCarousel = () => {
 
   console.log(activeCarouselItem, carouselItemToRender.videoUrl)
   return (
-    <section id="hero-carousel" >
+    <section id="hero-carousel" className="w-100 h-[120vh]">
       <AnimatePresence>
         <HeroCarouselItem key={carouselItemToRender.id} videoUrl={carouselItemToRender.videoUrl} mainText={carouselItemToRender.mainText} subText={carouselItemToRender.subText} discoverText={carouselItemToRender.discoverText}/>
       </AnimatePresence>

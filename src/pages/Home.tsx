@@ -1,7 +1,9 @@
+import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
-import Hero from "../sections/Home/Hero"
 
 import HeroCarousel from "../sections/Home/HeroCarousel"
+import NewsCarousel from "../sections/Home/NewsCarousel"
+import Showcase from "../sections/Home/Showcase"
 
 const Home = () => {
     return (
@@ -11,10 +13,15 @@ const Home = () => {
             </header>
             <main>
                 <HeroCarousel/>
+                
+                <Showcase/>
 
-                <div style={{background: "#333333"}}>A</div>
-            
+                <NewsCarousel/>
             </main>
+
+            <footer>
+                <Footer/>
+            </footer>
             
         </>
     )
