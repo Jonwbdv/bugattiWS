@@ -5,11 +5,15 @@ import './App.css'
 
 import Home from './pages/Home'
 
+import HomeContextProvider from './app/HomeContextProvider'
+
 function App() {
 
   return (
     <div className='app'>
-      <Home/>
+      <HomeContextProvider>
+        <Home/>
+      </HomeContextProvider>
     </div>
   )
 }

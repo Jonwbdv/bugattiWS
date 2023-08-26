@@ -47,3 +47,16 @@ export const scaleIn = {
         scale: 1.5
     }
 }
+
+
+export const vehiclesNavVariants = {
+    hide: {
+        width: 0,
+    },
+    show: {
+        width: "100%"
+    },
+    exit: {
+        width: 0
+    }
+}
