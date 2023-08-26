@@ -7,8 +7,8 @@ export const showcaseContent = [{
 {
     id: "item-2",
     imageUrl: "/pictures/showcase/OldModels.webp",
-    mainText: "PAST MODELS",
-    locationText: "History",
+    mainText: "HISTORY OF BUGATTI",
+    locationText: "About Us",
 },
 {
     id: "item-3",

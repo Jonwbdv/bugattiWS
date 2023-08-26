@@ -57,7 +57,15 @@ const VehiclesNav = () => {
                         }
                     </section>
                     <section id='car-preview' className='flex flex-col items-center w-[50%] h-100' >
-                        <img src="/logo/bugattiLogo.png" alt="Bugatti Logo" width={50} height={100} className='pt-5 pb-5'/>
+                        <img src="/logo/bugattiLogo.png" alt="Bugatti Logo" width={50} height={100} className='pt-5 pb-10'/>
+                        
+                        <figure className='flex flex-col w-full h-full justify-center items-center'>
+                        <p className='pb-5'>Veyron</p>
+
+                            <img src="/pictures/navbar/BugattiVeyron.png" alt="Car Preview" className='w-full'/>
+
+                        </figure>
+
                     </section>
                 </motion.section>}
         </AnimatePresence>
